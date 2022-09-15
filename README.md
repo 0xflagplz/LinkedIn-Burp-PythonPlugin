@@ -13,18 +13,18 @@ Install the Python Scripter extension from the **Extender-->BApp** Store tab in 
 ## Step 2
 You may need to download the Jython standalone JAR file and point Burp to it if you have not done that before.
 
-![Jython](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/tree/main/images/jython.png)
+![Jython](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/jython.png)
 
 ## Step 3
 Copy and paste code from this repo (scrape-google-linkedin.txt) into the newly available "Script" tab. Be sure to copy code from the “Raw” view in BitBucket so that the carriage returns and indentation copy correctly.
 
-![Script Tab](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/tree/main/images/pastecode.png)
+![Script Tab](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/pastecode.png)
 
 
 ## Step 4
 Configure the Extension to save output to a file. This is where your usernames will be written. You can optionally select the "Show in UI" option, but the output window truncates items when the list gets too long.
 
-![Save Output](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/tree/main/images/set-filename.png)
+![Save Output](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/set-filename.png)
 
 
 ## Step 5
@@ -32,11 +32,11 @@ Configure your browser to use Burp as a proxy as you normally would. From the br
 
 site:linkedin.com/in "Company Name"
 
-![Example](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/tree/main/images/example2.png)
+![Example](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/example2.png)
 
 The script will write the name that shows up before the text " | LinkedIn" or "| Professional Profile - LinkedIn" in the search results to the output file. In this example, it would write "James Lee - Hacker - Black Hills Information Security" and "Derek Banks". Google limits the results to 10 per page. You can click on additional pages of results to get more employee names written to the file.
 
-![Google](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/tree/main/images/google.png)
+![Google](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/google.png)
 
 You can gather a large list of employee names quickly and easily with this method. Try importing the list to Microsoft Excel where you can use formulas to turn employee names into the appropriate username format such as first initial followed by last name. It is also a good idea to use the "Remove Duplicates" functionality in Excel since the script may export the same employee name multiple times.
 
