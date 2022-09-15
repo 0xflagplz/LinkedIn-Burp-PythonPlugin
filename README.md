@@ -1,5 +1,5 @@
 # Gathering Usernames from Google LinkedIn Results using Burp Suite Pro
-Original Creator - [clr2of8] (https://github.com/clr2of8/Gather-Usernames-From-Google-LinkedIn-Results)    
+Original Creator - [clr2of8](https://github.com/clr2of8/Gather-Usernames-From-Google-LinkedIn-Results)    
   
   
   
