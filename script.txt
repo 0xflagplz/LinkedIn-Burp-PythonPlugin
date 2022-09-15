@@ -1,0 +1,47 @@
+if not messageIsRequest:
+  response = messageInfo.getResponse()
+  analyzedResponse = helpers.analyzeResponse(response)
+  headerList = analyzedResponse.getHeaders()
+  bodyStr = helpers.bytesToString(response[analyzedResponse.getBodyOffset():]).encode('ascii','ignore')
+  stillTrash=[]
+  
+  if "| LinkedIn" in bodyStr:
+    a = bodyStr.split("| LinkedIn")
+    b = bodyStr.split (" - LinkedIn")
+    strs = a+b
+    strs.pop(-1) #remove the last item
+    for str in strs:
+      try:
+        name = (str.rsplit("x22",1)[1]).strip()
+      except:
+        x="test"
+      try:
+        name = (str.rsplit("null",1)[1]).strip()
+      except:
+        x="test"                
+      try: 
+        name = (str.rsplit("\">",1)[1]).strip()
+        if "x22" in name:
+          name = (str.rsplit("</body>",1)[1]).strip()
+        if "x22" in name:
+          name = (str.rsplit("</html>",1)[1]).strip()
+        if "x22" in name:
+          name = (str.rsplit("</div>",1)[1]).strip()
+        if "x22" in name:
+          name = (str.rsplit("x22",1)[1]).strip()
+        if "\"" in name:
+          name = (str.rsplit("\"",1)[1]).strip()     
+      except:
+        x="test"
+      stillTrash.append(name)
+    endmysuffering = 'http'
+    new_list = [item for item in stillTrash if endmysuffering not in item]
+    ch = '-'
+    for x in new_list: 
+      x = x.replace(',\\x22', '')
+      x = x.replace('&quot;B.J.&quot;', '')
+      strValue = x.split(ch, 1)[0]
+      if (strValue == "</div></div></body></html>"):
+      	asb='test'
+      else:
+      	print(strValue)
