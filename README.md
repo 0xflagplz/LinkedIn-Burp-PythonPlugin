@@ -1,6 +1,4 @@
-# Gathering Usernames from Google LinkedIn Results using Burp Suite Pro
-Original Creator - [clr2of8](https://github.com/clr2of8/Gather-Usernames-From-Google-LinkedIn-Results)    
-  
+# Gathering Usernames from Google LinkedIn Results using Burp Suite Pro  
   
   
 Use a Burp Suite Pro extension with a little Python script as described below. 
