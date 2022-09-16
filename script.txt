@@ -8,9 +8,9 @@ if not messageIsRequest:
     if "| LinkedIn" in bodyStr:
     
     # this is the only modifiable part of the whole script
-
-      c = bodyStr.split("- Optiv")
-    
+    # ---------------------------------------
+      c = bodyStr.split("- COMPANYNAME")
+    # ---------------------------------------
 
       a = bodyStr.split("| LinkedIn")
       b = bodyStr.split (" - LinkedIn")
