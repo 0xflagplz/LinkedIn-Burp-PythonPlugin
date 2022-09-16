@@ -4,44 +4,92 @@ if not messageIsRequest:
   headerList = analyzedResponse.getHeaders()
   bodyStr = helpers.bytesToString(response[analyzedResponse.getBodyOffset():]).encode('ascii','ignore')
   stillTrash=[]
+  if "r.bing.com" in bodyStr:
+    if "| LinkedIn" in bodyStr:
+    
+    # this is the only modifiable part of the whole script
+
+      c = bodyStr.split("- Optiv")
+    
+
+      a = bodyStr.split("| LinkedIn")
+      b = bodyStr.split (" - LinkedIn")
+
+      strs = a+b+c
   
-  if "| LinkedIn" in bodyStr:
-    a = bodyStr.split("| LinkedIn")
-    b = bodyStr.split (" - LinkedIn")
-    strs = a+b
-    strs.pop(-1) #remove the last item
-    for str in strs:
-      try:
-        name = (str.rsplit("x22",1)[1]).strip()
-      except:
-        x="test"
-      try:
-        name = (str.rsplit("null",1)[1]).strip()
-      except:
-        x="test"                
-      try: 
-        name = (str.rsplit("\">",1)[1]).strip()
-        if "x22" in name:
-          name = (str.rsplit("</body>",1)[1]).strip()
-        if "x22" in name:
-          name = (str.rsplit("</html>",1)[1]).strip()
-        if "x22" in name:
-          name = (str.rsplit("</div>",1)[1]).strip()
-        if "x22" in name:
+      strs.pop(-1) #remove the last item
+      for str in strs:
+        try:
+          name = (str.rsplit('https://www.linkedin.com/in',1)[1]).strip()
+
+        except:
+          x="test"    
+        try:
+          name = (str.rsplit("h=\"ID=SERP,",1)[1]).strip()
+        except:
+          x="test"
+                        
+        try: 
+          name = (str.rsplit("\">",1)[1]).strip()
+  
+        except:
+          x="test"
+        if "</strong> - " in name:
+          name = name.replace('<strong>', '')
+          name = name.replace('</strong>', '')
+          ab = (name.rsplit(" - ",2)[0]).strip()
+          print(ab)
+
+
+  if "window.google" in bodyStr:
+    if "| LinkedIn" in bodyStr:
+      a = bodyStr.split("| LinkedIn")
+      b = bodyStr.split (" - LinkedIn")
+      strs = a+b
+      strs.pop(-1) #remove the last item
+      for str in strs:
+        try:
           name = (str.rsplit("x22",1)[1]).strip()
-        if "\"" in name:
-          name = (str.rsplit("\"",1)[1]).strip()     
-      except:
-        x="test"
-      stillTrash.append(name)
-    endmysuffering = 'http'
-    new_list = [item for item in stillTrash if endmysuffering not in item]
-    ch = '-'
-    for x in new_list: 
-      x = x.replace(',\\x22', '')
-      x = x.replace('&quot;B.J.&quot;', '')
-      strValue = x.split(ch, 1)[0]
-      if (strValue == "</div></div></body></html>"):
-      	asb='test'
-      else:
-      	print(strValue)
+        except:
+          z="test"
+        try:
+          name = (str.rsplit("null",1)[1]).strip()
+        except:
+          z="test"                
+        try: 
+          name = (str.rsplit("\">",1)[1]).strip()
+          if "x22" in name:
+            name = (str.rsplit("</body>",1)[1]).strip() 
+          if "x22" in name:
+            name = (str.rsplit("</html>",1)[1]).strip()
+          if "x22" in name:
+            name = (str.rsplit("</div>",1)[1]).strip()
+          if "x22" in name:
+            name = (str.rsplit("x22",1)[1]).strip()
+          if "\"" in name:
+            name = (str.rsplit("\"",1)[1]).strip()     
+        except:
+          z="test"
+        stillTrash.append(name)
+      endmysuffering = 'http'
+      new_list = [item for item in stillTrash if endmysuffering not in item]
+      ch = '-'
+      ca = '<strong>'
+      cb = '<\/strong>' 
+      comma = ","   
+      for x in new_list: 
+        x = x.replace(',\\x22', '')
+        x = x.replace('&quot;B.J.&quot;', '')
+  
+        strValue = x.split(ca, 1)[0]
+        strValue = strValue.split(cb, 1)[0]
+        strValue = strValue.split(ch, 1)[0]
+        if ("," in strValue):
+          strValue = x.split(comma, 1)[0]
+        else:
+          lzlz='do nothing'   
+        
+        if (strValue == "</div></div></body></html>"):
+          asb='test'
+        else:
+          print(strValue)
