@@ -28,7 +28,10 @@ Configure the Extension to save output to a file. This is where your usernames w
 ## Step 5
 Configure your browser to use Burp as a proxy as you normally would. From the browser, do a Google search of the following form (don't forget the "/in" on the end of "linkedin.com":
 
-site:linkedin.com/in "Company Name"
+```site:linkedin.com/in "Company Name"```
+or
+```https://www.google.com/search?q=site%3Alinkedin.com%2Fin+%22COMPANYNAME%22&start=PAGENUMBER```
+
 
 ![Example](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/example2.png)
 
