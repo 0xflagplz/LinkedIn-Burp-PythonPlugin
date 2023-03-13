@@ -1,5 +1,4 @@
 # Gathering Usernames from Google LinkedIn Results using Burp Suite Pro  
-  **Depricated**
   
 Use a Burp Suite Pro extension with a little Python script as described below. 
 To collect employee names with Burp, you'll need to do the following steps.
