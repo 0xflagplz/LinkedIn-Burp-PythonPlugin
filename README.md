@@ -8,7 +8,7 @@ Install the Python Scripter extension from the **Extender-->BApp** Store tab in 
 
 ![Jython](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/1.png)
 
-## Step 32
+## Step 2
 Copy and paste code from this repo (scrape-google-linkedin.txt) into the newly available "Script" tab. Be sure to copy code from the “Raw” view in BitBucket so that the carriage returns and indentation copy correctly.
 
 ![Script Tab](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/2.png)
@@ -17,7 +17,7 @@ Copy and paste code from this repo (scrape-google-linkedin.txt) into the newly a
 ## Step 3
 Configure the Extension to save output to a file. This is where your usernames will be written. You can optionally select the "Show in UI" option, but the output window truncates items when the list gets too long.
 
-![Save Output](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/set-filename.png)
+![Save Output](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/3.png)
 
 
 ## Step 4
