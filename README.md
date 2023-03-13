@@ -10,12 +10,12 @@ Install the Python Scripter extension from the **Extender-->BApp** Store tab in 
 ## Step 2
 You may need to download the Jython standalone JAR file and point Burp to it if you have not done that before.
 
-![Jython](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/jython.png)
+![Jython](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/1.png)
 
 ## Step 3
 Copy and paste code from this repo (scrape-google-linkedin.txt) into the newly available "Script" tab. Be sure to copy code from the “Raw” view in BitBucket so that the carriage returns and indentation copy correctly.
 
-![Script Tab](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/pastecode.png)
+![Script Tab](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/2.png)
 
 
 ## Step 4
