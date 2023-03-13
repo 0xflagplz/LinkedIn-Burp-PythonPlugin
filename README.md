@@ -6,25 +6,21 @@ To collect employee names with Burp, you'll need to do the following steps.
 ## Step 1
 Install the Python Scripter extension from the **Extender-->BApp** Store tab in Burp Suite Pro
 
-
-## Step 2
-You may need to download the Jython standalone JAR file and point Burp to it if you have not done that before.
-
 ![Jython](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/1.png)
 
-## Step 3
+## Step 32
 Copy and paste code from this repo (scrape-google-linkedin.txt) into the newly available "Script" tab. Be sure to copy code from the “Raw” view in BitBucket so that the carriage returns and indentation copy correctly.
 
 ![Script Tab](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/2.png)
 
 
-## Step 4
+## Step 3
 Configure the Extension to save output to a file. This is where your usernames will be written. You can optionally select the "Show in UI" option, but the output window truncates items when the list gets too long.
 
 ![Save Output](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/set-filename.png)
 
 
-## Step 5
+## Step 4
 Configure your browser to use Burp as a proxy as you normally would. From the browser, do a Google search of the following form (don't forget the "/in" on the end of "linkedin.com":
 
 ```site:linkedin.com/in "Company Name"```
