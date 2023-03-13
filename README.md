@@ -13,7 +13,8 @@ Copy and paste code from this repo into the newly available "Script" tab. Be sur
 
 ![Script Tab](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/2.png)
 
-## Step 3 Once the script has been copied to BurpSuite, select "Compile"
+## Step 3 
+Once the script has been copied to BurpSuite, select "Compile"
 
 ![Compile Script](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/2.png)
 
