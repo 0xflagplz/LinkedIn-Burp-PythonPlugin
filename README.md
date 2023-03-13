@@ -51,4 +51,4 @@ You can gather a large list of employee names quickly and easily with this metho
 When you are done, unload the Python Scripter or erase the script code so you don't burden Burp with inspecting all responses.
 
 ---
-Original Script Creator: @clr2of8
+Original Script Creator: [@clr2of8](https://github.com/clr2of8/GatherContacts)
