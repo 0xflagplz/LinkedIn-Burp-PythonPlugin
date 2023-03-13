@@ -33,11 +33,17 @@ or
 ```https://www.google.com/search?q=site%3Alinkedin.com%2Fin+%22COMPANYNAME%22&start=PAGENUMBER```
 
 
-![Example](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/example2.png)
+![Example](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/5.png)
 
-The script will write the name that shows up before the text " | LinkedIn" or "| Professional Profile - LinkedIn" in the search results to the output file. In this example, it would write "James Lee - Hacker - Black Hills Information Security" and "Derek Banks". Google limits the results to 10 per page. You can click on additional pages of results to get more employee names written to the file.
+The script will write the name that shows up before the text " | LinkedIn" or "| Professional Profile - LinkedIn" in the search results to the output file. In this example, it would write "Nathan Brady". 
 
-![Google](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/google.png)
+### Page Loading Notes
+Google limits the results to 10 per page. You were previously prompted with a list of pages to select when reaching the bottom.
+**Recently, google automatically loads results following the original 10. All additional names will also be retreived.**
+
+![Google - Old](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/google.png)
+![Google - New](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/6.png)
+![Google - New](https://github.com/AchocolatechipPancake/LinkedIn-Burp-PythonPlugin/blob/main/images/7.png)
 
 You can gather a large list of employee names quickly and easily with this method. Try importing the list to Microsoft Excel where you can use formulas to turn employee names into the appropriate username format such as first initial followed by last name. It is also a good idea to use the "Remove Duplicates" functionality in Excel since the script may export the same employee name multiple times.
 
