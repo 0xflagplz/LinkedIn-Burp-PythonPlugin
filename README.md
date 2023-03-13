@@ -49,3 +49,6 @@ You can gather a large list of employee names quickly and easily with this metho
 
 ## Step 6
 When you are done, unload the Python Scripter or erase the script code so you don't burden Burp with inspecting all responses.
+
+---
+Original Script Creator: @clr2of8
